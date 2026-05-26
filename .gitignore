@@ -1,0 +1,16 @@
+# pliki kompilacji C++
+*.exe
+*.o
+*.obj
+
+# foldery IDE
+.vscode/
+.idea/
+
+# build
+build/
+cmake-build-debug/
+
+# system Windows
+Thumbs.db
+.DS_Store

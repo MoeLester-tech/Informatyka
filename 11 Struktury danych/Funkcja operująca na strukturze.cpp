@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int ObliczSume(int *tab, int size) {
+    int suma = 0;
+    for (int i = 0; i < size; i++) {
+        suma += tab[i];
+    }
+    return suma;
+}
+
+int main() {
+    int tab[4] = {10, 20, 30, 40};
+
+    cout << "Suma: " << ObliczSume(tab, 4) << "\n";
+
+    for (int i = 0; i < 4; i++) {
+        cout << "Podaj nowa wartosc dla elementu " << i << ": ";
+        cin >> tab[i];
+    }
+
+    cout << "\nNowa tablica:\n";
+    for (int i = 0; i < 4; i++) {
+        cout << tab[i] << " ";
+    }
+
+    cout << "\nNowa suma: " << ObliczSume(tab, 4) << "\n";
+
+    return 0;
+}
